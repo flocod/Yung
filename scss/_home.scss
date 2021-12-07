@@ -1,0 +1,458 @@
+.flex {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  .profile_container {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .struct {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 80%;
+      .profile_owner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        .fil {
+          display: block;
+          height: 120px;
+          width: 1px;
+          background: #707070;
+        }
+        .profile_owner_box {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+          background: transparent
+            linear-gradient(to bottom, #535d65 0%, #324658 100%) 0% 0% no-repeat
+            padding-box;
+          border-radius: 30px;
+          padding-top: 70px;
+
+          position: relative;
+
+          &::after {
+            position: absolute;
+            top: 0px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background: white 0% 0% no-repeat padding-box;
+            box-sizing: border-box;
+            border: 4px solid #8da700;
+            border-radius: 50%;
+            content: " ";
+          }
+
+          .profile_owner_box_struct {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 70%;
+
+            .profile_img {
+              display: block;
+              width: 100%;
+              height: 150px;
+              border-radius: 30px;
+              position: relative;
+              z-index: 2;
+              .image {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                overflow: hidden;
+
+                img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+              }
+
+              &:after {
+                content: " ";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-15deg);
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                background: #e7eaef;
+                opacity: 0.14;
+              }
+              &:before {
+                content: " ";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(15deg);
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                background: #e7eaef;
+                opacity: 0.14;
+              }
+            }
+
+            .name_owner {
+              display: block;
+              text-align: center;
+              width: 100%;
+
+              margin-top: 40px;
+              .name {
+                display: inline-block;
+                font: normal normal normal 47px/58px Yanone Kaffeesatz;
+                letter-spacing: 0px;
+                color: #ffffff;
+                width: 100%;
+                margin-bottom: 6px;
+              }
+
+              .titre {
+                font: normal normal 300 20px/25px Yanone Kaffeesatz;
+                letter-spacing: 0px;
+                color: #ffffff;
+                display: inline-block;
+                text-align: center;
+                width: 100%;
+              }
+            }
+
+            .software_box {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              width: 150px;
+              height: 35px;
+              background: #ffffff60 0% 0% no-repeat padding-box;
+              border: 3px solid #e7eaef4d;
+              border-radius: 37px;
+              margin-top: 15px;
+
+              .soft_item {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                height: 17px;
+                margin-left: 5px;
+                margin-right: 5px;
+                img {
+                  display: inline-block;
+                  height: 100%;
+                }
+              }
+            }
+
+            .socials {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 70px;
+              background: #e7eaef 0% 0% no-repeat padding-box;
+              border-radius: 55px;
+              width: 100%;
+              transform: translateY(50%);
+
+              .social_item {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 16px;
+                margin-left: 5px;
+                margin-right: 5px;
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                transition: all 0.3s ease;
+
+                &:hover {
+                  background: #003469;
+                  filter: contrast(120%);
+
+                  transform: scale(1.2);
+                  transition: all 0.3s ease;
+                }
+              }
+
+              .facebook {
+                color: #0058b1;
+              }
+              .twitter {
+                color: #008cc1;
+              }
+              .linkedin {
+                color: #2c6596;
+              }
+              .whatsapp {
+                color: #00960c;
+              }
+            }
+          }
+        }
+      }
+
+      .useful {
+        display: flex;
+        margin-top: 60px;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        .item_useful {
+          color: #cccccc;
+          opacity: 0.1;
+          font-size: 20px;
+          margin-left: 6px;
+          margin-right: 6px;
+        }
+      }
+    }
+  }
+
+  .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+
+    .struct {
+      display: block;
+      width: 90%;
+
+      .reference {
+        display: block;
+        text-align: left;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font: normal normal normal 17px/24px Yanone Kaffeesatz;
+        letter-spacing: 0px;
+        color: #aaaaaa;
+        opacity: 0.51;
+      }
+      .page_title {
+        display: flex;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        border-top: 1px solid #70707062;
+        border-bottom: 1px solid #70707062;
+
+        .title_section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .ico {
+            color: #e0ff38;
+            display: inline-block;
+            font-size: 30px;
+            line-height: 0px;
+            opacity: 0.51;
+          }
+          .text {
+            display: inline-block;
+            font: normal normal normal 40px/0px Yanone Kaffeesatz;
+            letter-spacing: 0px;
+            color: #edf2f8;
+            margin-left: 23px;
+          }
+        }
+
+        .add_detail {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 50px;
+          border-left: 1px solid #70707062;
+          font: normal normal normal 23px/23px Yanone Kaffeesatz;
+          color: #cccccc;
+          margin-right: 30px;
+          padding-left: 30px;
+        }
+
+        .btn_download {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 221px;
+          height: 68px;
+          transform: matrix(1, 0, 0, 1, 0, 0);
+          background: #8da700 0% 0% no-repeat padding-box;
+          border-radius: 8px;
+          color: #edf2f8;
+          margin-left: 50px;
+          .text {
+            font: normal normal medium 15px/23px Poppins;
+            letter-spacing: 0px;
+          }
+
+          .ico {
+            display: inline-block;
+            font-size: 20px;
+            margin-left: 20px;
+          }
+        }
+      }
+
+      .description {
+        display: block;
+        margin-top: 30px;
+        font: normal normal 300 14px/24px Poppins;
+        letter-spacing: 0px;
+        color: #cccccc;
+      }
+      h2 {
+        font: normal normal normal 30px/40px Yanone Kaffeesatz;
+        letter-spacing: 0px;
+        color: #cccccc;
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+
+      .contain_skill_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+
+        .skill_box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 32%;
+          height: auto;
+          padding-top: 30px;
+          padding-bottom: 30px;
+          background: #00000025 0% 0% no-repeat padding-box;
+          box-shadow: 0px 3px 6px #00000029;
+          border-radius: 10px;
+          .skill_box_struct {
+            display: block;
+            width: 80%;
+
+            .skill_info {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              .skill_name {
+                display: block;
+                .ico {
+                  display: block;
+                  font-size: 25px;
+                  color:#707070;
+                  margin-bottom:10px;
+                }
+                .text{
+                    font: normal normal normal 20px/24px Yanone Kaffeesatz;
+                    letter-spacing: 0px;
+                    color: #CCCCCC;
+                    display: block;
+                }
+                .line{
+                display: block;
+                width: 55px;
+                height: 1px;
+                background: #70707062;
+                margin-top: 8px;
+                }
+              }
+
+              .skill_percentage{
+                width: 70px;
+                height: 70px;
+                background: #133e6954 0% 0% no-repeat padding-box;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                position: relative;
+                .round {
+                    transform: rotate(-90deg);
+                    transition: all 1s ease-in-out;
+                    width: 90%;
+                    height: 90%;
+                    fill: transparent;
+                    position: relative;
+                    z-index: 2;
+                    /* SVG */
+                    circle{
+                        fill: none;
+                    
+                    stroke-width: 8;
+                    stroke-linecap: round;
+                    // stroke-dasharray: 0 999;
+                    
+                    }
+
+                   
+                    
+                  }
+
+                  .percentage{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    color: white;
+                    width: 80%;
+                    height: 80%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: flex-end;
+                    border-radius: 50%;
+                    .percent_contain
+                    {
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: baseline;
+                        
+                        .unit{
+                            font-size: 10px;
+                            opacity: 0.8;
+                            margin-left:2px;
+                        }
+                        .val{
+                            font: normal normal 600 18px/30px Montserrat;
+                            display: inline-block;
+                        }
+                    }
+                    
+                    
+                }
+
+                
+              }
+
+            }
+
+            .skill_decription
+            {
+            display: block;
+            width: 100%;
+            text-align: left;
+            font: normal normal normal 11px/20px Poppins;
+            letter-spacing: 0px;
+            color: #CCCCCC;
+            margin-top: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.container{
+display: flex;
+
+width: calc(100% - 117px);
+background: radial-gradient(#444546 0%, #182A3B 100%);
+height: 100%;
+overflow-y: auto;
+padding-bottom: 50px;
+.page{
+    display: block;
+    width: 100%;
+    
+}
+
+
+}

@@ -5,6 +5,9 @@
     width: 117px;
     background: $theme;
     height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
 
     .struct{
         display: flex;
@@ -45,7 +48,7 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-
+            margin-top: 50px;
             .item{
                 width: 60px;
                 height: 60px;
@@ -57,6 +60,7 @@
                 font-size: 20px;
                 color: #F7FFFF;
                 margin-bottom: 20px;
+                cursor: pointer;
                 
             }
 
@@ -82,6 +86,39 @@
 
         }
 
+        .tools{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            margin-bottom: 100%;
+
+            .tel{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                background: #bedbff34;
+                color: white;
+                font-size: 20px;
+                cursor: pointer;
+                .ico
+                {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 80%;
+                    height: 80%;
+                    border-radius: 50%;
+                    background: #13A800 0% 0% no-repeat padding-box;
+                    transform: rotate(70deg);
+                }
+
+            }
+        }
 
     }
 

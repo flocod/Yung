@@ -64,9 +64,9 @@ a :hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
   height: 100%;
   width: 100%;
 }
@@ -81,6 +81,9 @@ a :hover {
   width: 117px;
   background: #194056;
   height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 .nav .struct {
@@ -146,6 +149,7 @@ a :hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 50px;
 }
 
 .nav .struct .menu .item {
@@ -165,6 +169,7 @@ a :hover {
   font-size: 20px;
   color: #F7FFFF;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .nav .struct .menu .active {
@@ -187,4 +192,699 @@ a :hover {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 0px 2.5px #194056;
           box-shadow: 0px 0px 0px 2.5px #194056;
+}
+
+.nav .struct .tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 100%;
+}
+
+.nav .struct .tools .tel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #bedbff34;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav .struct .tools .tel .ico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background: #13A800 0% 0% no-repeat padding-box;
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: calc(100% - 117px);
+  background: radial-gradient(#444546 0%, #182A3B 100%);
+  height: 100%;
+  overflow-y: auto;
+  padding-bottom: 50px;
+}
+
+.container .page {
+  display: block;
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+.flex .profile_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex .profile_container .struct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+}
+
+.flex .profile_container .struct .profile_owner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.flex .profile_container .struct .profile_owner .fil {
+  display: block;
+  height: 120px;
+  width: 1px;
+  background: #707070;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background: transparent -webkit-gradient(linear, left top, left bottom, from(#535d65), to(#324658)) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(to bottom, #535d65 0%, #324658 100%) 0% 0% no-repeat padding-box;
+  border-radius: 30px;
+  padding-top: 70px;
+  position: relative;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box::after {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background: white 0% 0% no-repeat padding-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 4px solid #8da700;
+  border-radius: 50%;
+  content: " ";
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img .image {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img:after {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(-15deg);
+          transform: translate(-50%, -50%) rotate(-15deg);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #e7eaef;
+  opacity: 0.14;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img:before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(15deg);
+          transform: translate(-50%, -50%) rotate(15deg);
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  background: #e7eaef;
+  opacity: 0.14;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner .name {
+  display: inline-block;
+  font: normal normal normal 47px/58px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #ffffff;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner .titre {
+  font: normal normal 300 20px/25px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .software_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  height: 35px;
+  background: #ffffff60 0% 0% no-repeat padding-box;
+  border: 3px solid #e7eaef4d;
+  border-radius: 37px;
+  margin-top: 15px;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .software_box .soft_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 17px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .software_box .soft_item img {
+  display: inline-block;
+  height: 100%;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+  background: #e7eaef 0% 0% no-repeat padding-box;
+  border-radius: 55px;
+  width: 100%;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .social_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .social_item:hover {
+  background: #003469;
+  -webkit-filter: contrast(120%);
+          filter: contrast(120%);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .facebook {
+  color: #0058b1;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .twitter {
+  color: #008cc1;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .linkedin {
+  color: #2c6596;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .whatsapp {
+  color: #00960c;
+}
+
+.flex .profile_container .struct .useful {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 60px;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex .profile_container .struct .useful .item_useful {
+  color: #cccccc;
+  opacity: 0.1;
+  font-size: 20px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+.flex .aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+}
+
+.flex .aside .struct {
+  display: block;
+  width: 90%;
+}
+
+.flex .aside .struct .reference {
+  display: block;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font: normal normal normal 17px/24px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #aaaaaa;
+  opacity: 0.51;
+}
+
+.flex .aside .struct .page_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-top: 1px solid #70707062;
+  border-bottom: 1px solid #70707062;
+}
+
+.flex .aside .struct .page_title .title_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex .aside .struct .page_title .title_section .ico {
+  color: #e0ff38;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 0px;
+  opacity: 0.51;
+}
+
+.flex .aside .struct .page_title .title_section .text {
+  display: inline-block;
+  font: normal normal normal 40px/0px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #edf2f8;
+  margin-left: 23px;
+}
+
+.flex .aside .struct .page_title .add_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  border-left: 1px solid #70707062;
+  font: normal normal normal 23px/23px Yanone Kaffeesatz;
+  color: #cccccc;
+  margin-right: 30px;
+  padding-left: 30px;
+}
+
+.flex .aside .struct .page_title .btn_download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 221px;
+  height: 68px;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+          transform: matrix(1, 0, 0, 1, 0, 0);
+  background: #8da700 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  color: #edf2f8;
+  margin-left: 50px;
+}
+
+.flex .aside .struct .page_title .btn_download .text {
+  font: normal normal medium 15px/23px Poppins;
+  letter-spacing: 0px;
+}
+
+.flex .aside .struct .page_title .btn_download .ico {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+.flex .aside .struct .description {
+  display: block;
+  margin-top: 30px;
+  font: normal normal 300 14px/24px Poppins;
+  letter-spacing: 0px;
+  color: #cccccc;
+}
+
+.flex .aside .struct h2 {
+  font: normal normal normal 30px/40px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #cccccc;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.flex .aside .struct .contain_skill_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 32%;
+  height: auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #00000025 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct {
+  display: block;
+  width: 80%;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_name {
+  display: block;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_name .ico {
+  display: block;
+  font-size: 25px;
+  color: #707070;
+  margin-bottom: 10px;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_name .text {
+  font: normal normal normal 20px/24px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #CCCCCC;
+  display: block;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_name .line {
+  display: block;
+  width: 55px;
+  height: 1px;
+  background: #70707062;
+  margin-top: 8px;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage {
+  width: 70px;
+  height: 70px;
+  background: #133e6954 0% 0% no-repeat padding-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  position: relative;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .round {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  width: 90%;
+  height: 90%;
+  fill: transparent;
+  position: relative;
+  z-index: 2;
+  /* SVG */
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .round circle {
+  fill: none;
+  stroke-width: 8;
+  stroke-linecap: round;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+  border-radius: 50%;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .percentage .percent_contain {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .percentage .percent_contain .unit {
+  font-size: 10px;
+  opacity: 0.8;
+  margin-left: 2px;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .percentage .percent_contain .val {
+  font: normal normal 600 18px/30px Montserrat;
+  display: inline-block;
+}
+
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_decription {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: normal normal normal 11px/20px Poppins;
+  letter-spacing: 0px;
+  color: #CCCCCC;
+  margin-top: 14px;
 }
