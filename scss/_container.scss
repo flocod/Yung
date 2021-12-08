@@ -2,15 +2,44 @@
 display: flex;
 
 width: calc(100% - 117px);
-background: radial-gradient(#444546 0%, #182A3B 100%);
+background: radial-gradient(#444546 0.5%, #182A3B);
 height: 100%;
 overflow-y: auto;
+overflow-x: hidden;
 padding-bottom: 50px;
+position: relative;
+@media all and (max-width:500px){
+    width: calc(100% - 80px);
+}
+
+
 .page{
     display: block;
     width: 100%;
+    position: relative;
+    z-index: 2;
     
 }
+
+.fond_bottom{
+display: block;
+position: absolute;
+bottom: 0px;
+left: 50%;
+transform: translateX(-90%);
+width: 40%;
+z-index: -1;
+}
+.apparels{
+display: block;
+position: absolute;
+top: 50%;
+right:0%;
+transform: translateX(35%) translateY(-50%);
+width: 22%;
+z-index: -1;
+}
+
 
 
 }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
 /**
 Thin 100
 Extra-light 200
@@ -86,6 +86,12 @@ a :hover {
   left: 0px;
 }
 
+@media all and (max-width: 500px) {
+  .nav {
+    width: 80px;
+  }
+}
+
 .nav .struct {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,6 +124,13 @@ a :hover {
   border-radius: 50%;
   background: #2D5065;
   margin-top: 48px;
+}
+
+@media all and (max-width: 500px) {
+  .nav .struct .profile_ico {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .nav .struct .profile_ico .img {
@@ -170,6 +183,13 @@ a :hover {
   color: #F7FFFF;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+@media all and (max-width: 500px) {
+  .nav .struct .menu .item {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .nav .struct .menu .active {
@@ -231,6 +251,13 @@ a :hover {
   cursor: pointer;
 }
 
+@media all and (max-width: 500px) {
+  .nav .struct .tools .tel {
+    width: 55px;
+    height: 55px;
+  }
+}
+
 .nav .struct .tools .tel .ico {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -254,15 +281,47 @@ a :hover {
   display: -ms-flexbox;
   display: flex;
   width: calc(100% - 117px);
-  background: radial-gradient(#444546 0%, #182A3B 100%);
+  background: radial-gradient(#444546 0.5%, #182A3B);
   height: 100%;
   overflow-y: auto;
+  overflow-x: hidden;
   padding-bottom: 50px;
+  position: relative;
+}
+
+@media all and (max-width: 500px) {
+  .container {
+    width: calc(100% - 80px);
+  }
 }
 
 .container .page {
   display: block;
   width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.container .fond_bottom {
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  -webkit-transform: translateX(-90%);
+          transform: translateX(-90%);
+  width: 40%;
+  z-index: -1;
+}
+
+.container .apparels {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateX(35%) translateY(-50%);
+          transform: translateX(35%) translateY(-50%);
+  width: 22%;
+  z-index: -1;
 }
 
 .flex {
@@ -273,6 +332,19 @@ a :hover {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
+}
+
+@media all and (max-width: 1337px) {
+  .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-bottom: 40px;
+  }
 }
 
 .flex .profile_container {
@@ -292,6 +364,12 @@ a :hover {
           flex-direction: column;
 }
 
+@media all and (max-width: 1337px) {
+  .flex .profile_container {
+    width: 100%;
+  }
+}
+
 .flex .profile_container .struct {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -304,6 +382,18 @@ a :hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 80%;
+}
+
+@media all and (max-width: 1337px) {
+  .flex .profile_container .struct {
+    width: 400px;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .flex .profile_container .struct {
+    width: 80%;
+  }
 }
 
 .flex .profile_container .struct .profile_owner {
@@ -388,6 +478,18 @@ a :hover {
   z-index: 2;
 }
 
+@media all and (max-width: 1311px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img {
+    height: 120px;
+  }
+}
+
+@media all and (max-width: 1310px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img {
+    height: 190px;
+  }
+}
+
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img .image {
   display: inline-block;
   width: 100%;
@@ -417,6 +519,13 @@ a :hover {
   opacity: 0.14;
 }
 
+@media all and (max-width: 1494px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img:after {
+    -webkit-transform: translate(-50%, -50%) rotate(-10deg);
+            transform: translate(-50%, -50%) rotate(-10deg);
+  }
+}
+
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img:before {
   content: " ";
   position: absolute;
@@ -429,6 +538,13 @@ a :hover {
   border-radius: 30px;
   background: #e7eaef;
   opacity: 0.14;
+}
+
+@media all and (max-width: 1494px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img:before {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
 }
 
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner {
@@ -447,6 +563,18 @@ a :hover {
   margin-bottom: 6px;
 }
 
+@media all and (max-width: 1494px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner .name {
+    font: normal normal normal 37px/47px Yanone Kaffeesatz;
+  }
+}
+
+@media all and (max-width: 1311px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner .name {
+    font: normal normal normal 27px/37px Yanone Kaffeesatz;
+  }
+}
+
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner .titre {
   font: normal normal 300 20px/25px Yanone Kaffeesatz;
   letter-spacing: 0px;
@@ -454,6 +582,12 @@ a :hover {
   display: inline-block;
   text-align: center;
   width: 100%;
+}
+
+@media all and (max-width: 1311px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner .titre {
+    font: normal normal 300 17px/20px Yanone Kaffeesatz;
+  }
 }
 
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .software_box {
@@ -512,6 +646,12 @@ a :hover {
           transform: translateY(50%);
 }
 
+@media all and (max-width: 1311px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials {
+    height: 50px;
+  }
+}
+
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .social_item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -530,6 +670,13 @@ a :hover {
   border-radius: 50%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+@media all and (max-width: 1311px) {
+  .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .social_item {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .social_item:hover {
@@ -593,6 +740,12 @@ a :hover {
   width: 70%;
 }
 
+@media all and (max-width: 1337px) {
+  .flex .aside {
+    width: 100%;
+  }
+}
+
 .flex .aside .struct {
   display: block;
   width: 90%;
@@ -618,12 +771,22 @@ a :hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
   border-top: 1px solid #70707062;
   border-bottom: 1px solid #70707062;
+}
+
+@media all and (max-width: 474px) {
+  .flex .aside .struct .page_title {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .flex .aside .struct .page_title .title_section {
@@ -636,6 +799,23 @@ a :hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+}
+
+@media all and (max-width: 900px) {
+  .flex .aside .struct .page_title .title_section {
+    margin-right: 15px;
+  }
+}
+
+@media all and (max-width: 812px) {
+  .flex .aside .struct .page_title .title_section {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 20px;
+  }
 }
 
 .flex .aside .struct .page_title .title_section .ico {
@@ -646,12 +826,62 @@ a :hover {
   opacity: 0.51;
 }
 
+@media all and (max-width: 900px) {
+  .flex .aside .struct .page_title .title_section .ico {
+    font-size: 20px;
+  }
+}
+
 .flex .aside .struct .page_title .title_section .text {
   display: inline-block;
-  font: normal normal normal 40px/0px Yanone Kaffeesatz;
+  font: normal normal normal 40px/42px Yanone Kaffeesatz;
   letter-spacing: 0px;
   color: #edf2f8;
   margin-left: 23px;
+}
+
+@media all and (max-width: 1498px) {
+  .flex .aside .struct .page_title .title_section .text {
+    font: normal normal normal 30px/40px Yanone Kaffeesatz;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .flex .aside .struct .page_title .title_section .text {
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 10px;
+  }
+}
+
+.flex .aside .struct .page_title .title_section img {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
+  width: 80px;
+}
+
+@media all and (max-width: 1498px) {
+  .flex .aside .struct .page_title .title_section img {
+    width: 60px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .flex .aside .struct .page_title .title_section img {
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 812px) {
+  .flex .aside .struct .page_title .title_section img {
+    -webkit-transform: translateX(-150%) translateY(-50%);
+            transform: translateX(-150%) translateY(-50%);
+    left: 50%;
+    right: auto;
+  }
 }
 
 .flex .aside .struct .page_title .add_detail {
@@ -670,6 +900,48 @@ a :hover {
   color: #cccccc;
   margin-right: 30px;
   padding-left: 30px;
+  position: relative;
+}
+
+@media all and (max-width: 474px) {
+  .flex .aside .struct .page_title .add_detail {
+    width: 20%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 12px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .flex .aside .struct .page_title .add_detail {
+    margin-right: 20px;
+    padding-left: 20px;
+    height: 30px;
+    font: normal normal normal 17px/23px Yanone Kaffeesatz;
+  }
+}
+
+.flex .aside .struct .page_title .add_detail img {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateX(100%) translateY(-50%);
+          transform: translateX(100%) translateY(-50%);
+  width: 70px;
+}
+
+@media all and (max-width: 1498px) {
+  .flex .aside .struct .page_title .add_detail img {
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 812px) {
+  .flex .aside .struct .page_title .add_detail_first {
+    border-left: none;
+    padding-left: 0px;
+  }
 }
 
 .flex .aside .struct .page_title .btn_download {
@@ -690,6 +962,15 @@ a :hover {
   border-radius: 8px;
   color: #edf2f8;
   margin-left: 50px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1074px) {
+  .flex .aside .struct .page_title .btn_download {
+    margin-left: 0px !important;
+    width: 186px;
+    height: 60px;
+  }
 }
 
 .flex .aside .struct .page_title .btn_download .text {
@@ -697,10 +978,43 @@ a :hover {
   letter-spacing: 0px;
 }
 
+@media all and (max-width: 1074px) {
+  .flex .aside .struct .page_title .btn_download .text {
+    font-size: 13px !important;
+    margin-left: 0px !important;
+  }
+}
+
+@media all and (max-width: 474px) {
+  .flex .aside .struct .page_title .btn_download .text {
+    border-bottom: 1px solid #8da700;
+    padding-bottom: 3px;
+    display: inline-block;
+  }
+}
+
 .flex .aside .struct .page_title .btn_download .ico {
   display: inline-block;
   font-size: 20px;
   margin-left: 20px;
+}
+
+@media all and (max-width: 1074px) {
+  .flex .aside .struct .page_title .btn_download .ico {
+    font-size: 14px !important;
+    margin-left: 15px !important;
+  }
+}
+
+@media all and (max-width: 474px) {
+  .flex .aside .struct .page_title .btn_download {
+    background: none;
+    width: auto;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 100%;
+  }
 }
 
 .flex .aside .struct .description {
@@ -734,6 +1048,14 @@ a :hover {
       flex-wrap: wrap;
 }
 
+@media all and (max-width: 856px) {
+  .flex .aside .struct .contain_skill_box {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .flex .aside .struct .contain_skill_box .skill_box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -752,6 +1074,13 @@ a :hover {
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
   border-radius: 10px;
+}
+
+@media all and (max-width: 856px) {
+  .flex .aside .struct .contain_skill_box .skill_box {
+    width: 80%;
+    margin-bottom: 20px;
+  }
 }
 
 .flex .aside .struct .contain_skill_box .skill_box .skill_box_struct {
