@@ -1,15 +1,14 @@
 .container{
 display: flex;
-
 width: calc(100% - 117px);
 background: radial-gradient(#444546 0.5%, #182A3B);
-height: 100%;
+height: auto;
 overflow-y: auto;
 overflow-x: hidden;
 padding-bottom: 50px;
 position: relative;
 @media all and (max-width:500px){
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
 }
 
 
@@ -18,7 +17,6 @@ position: relative;
     width: 100%;
     position: relative;
     z-index: 2;
-    
 }
 
 .fond_bottom{
@@ -39,7 +37,5 @@ transform: translateX(35%) translateY(-50%);
 width: 22%;
 z-index: -1;
 }
-
-
 
 }

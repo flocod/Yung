@@ -6,7 +6,7 @@
   @media all and (max-width:1337px){
       flex-direction: column;
       justify-content: center;
-      padding-bottom: 40px;
+      padding-bottom: 0px;
 
   }
 
@@ -28,7 +28,7 @@
         width: 400px;
     }
     @media all and (max-width:600px){
-        width: 80%;
+        width: 90%;
      }
       .profile_owner {
         display: flex;
@@ -495,9 +495,10 @@
         align-items: center;
         width: 100%;
         flex-wrap: wrap;
+        margin-bottom: 40px;
         @media all and (max-width:856px){
             justify-content: center;
-         }
+        }
 
         .skill_box {
           display: flex;
@@ -513,7 +514,10 @@
           @media all and (max-width:856px){
             width: 80%;
             margin-bottom: 20px;
-         }
+          }
+          @media all and (max-width:500px){
+            width: 100%;
+          }
           .skill_box_struct {
             display: block;
             width: 80%;
@@ -571,10 +575,7 @@
                     // stroke-dasharray: 0 999;
                     
                     }
-
-                   
-                    
-                  }
+                }
 
                   .percentage{
                     position: absolute;

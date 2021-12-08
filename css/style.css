@@ -88,7 +88,7 @@ a :hover {
 
 @media all and (max-width: 500px) {
   .nav {
-    width: 80px;
+    width: 60px;
   }
 }
 
@@ -128,8 +128,8 @@ a :hover {
 
 @media all and (max-width: 500px) {
   .nav .struct .profile_ico {
-    width: 50px;
-    height: 50px;
+    width: 44;
+    height: 44px;
   }
 }
 
@@ -187,8 +187,8 @@ a :hover {
 
 @media all and (max-width: 500px) {
   .nav .struct .menu .item {
-    width: 50px;
-    height: 50px;
+    width: 44;
+    height: 44px;
   }
 }
 
@@ -253,8 +253,8 @@ a :hover {
 
 @media all and (max-width: 500px) {
   .nav .struct .tools .tel {
-    width: 55px;
-    height: 55px;
+    width: 46px;
+    height: 46px;
   }
 }
 
@@ -282,7 +282,7 @@ a :hover {
   display: flex;
   width: calc(100% - 117px);
   background: radial-gradient(#444546 0.5%, #182A3B);
-  height: 100%;
+  height: auto;
   overflow-y: auto;
   overflow-x: hidden;
   padding-bottom: 50px;
@@ -291,7 +291,7 @@ a :hover {
 
 @media all and (max-width: 500px) {
   .container {
-    width: calc(100% - 80px);
+    width: calc(100% - 60px);
   }
 }
 
@@ -343,7 +343,7 @@ a :hover {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
 }
 
@@ -392,7 +392,7 @@ a :hover {
 
 @media all and (max-width: 600px) {
   .flex .profile_container .struct {
-    width: 80%;
+    width: 90%;
   }
 }
 
@@ -1046,6 +1046,7 @@ a :hover {
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 @media all and (max-width: 856px) {
@@ -1080,6 +1081,12 @@ a :hover {
   .flex .aside .struct .contain_skill_box .skill_box {
     width: 80%;
     margin-bottom: 20px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .flex .aside .struct .contain_skill_box .skill_box {
+    width: 100%;
   }
 }
 
