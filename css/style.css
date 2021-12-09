@@ -20,6 +20,7 @@ Black 900
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  background: radial-gradient(#444546 0.5%, #182A3B);
 }
 
 * {
@@ -79,11 +80,14 @@ a :hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 0px 30px 30px 0px;
   width: 117px;
   background: #194056;
-  height: 100%;
+  height: 90%;
   position: fixed;
-  top: 0px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 0px;
 }
 
@@ -184,18 +188,22 @@ a :hover {
   color: #F7FFFF;
   margin-bottom: 20px;
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media all and (max-width: 500px) {
   .nav .struct .menu .item {
-    width: 44;
+    width: 44px;
     height: 44px;
   }
 }
 
 .nav .struct .menu .active {
-  background: rgba(255, 255, 255, 0.116);
-  color: white;
+  background: rgba(0, 0, 0, 0.116);
+  color: #8DA700;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .nav .struct .menu .active:after {
@@ -230,7 +238,7 @@ a :hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  margin-bottom: 100%;
+  margin-bottom: 30%;
 }
 
 .nav .struct .tools .tel {
@@ -282,7 +290,6 @@ a :hover {
   display: -ms-flexbox;
   display: flex;
   width: calc(100% - 117px);
-  background: radial-gradient(#444546 0.5%, #182A3B);
   height: auto;
   overflow-y: auto;
   overflow-x: hidden;
@@ -468,6 +475,8 @@ a :hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 70%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img {
@@ -477,6 +486,8 @@ a :hover {
   border-radius: 30px;
   position: relative;
   z-index: 2;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media all and (max-width: 1311px) {
@@ -518,6 +529,8 @@ a :hover {
   border-radius: 30px;
   background: #e7eaef;
   opacity: 0.14;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media all and (max-width: 1494px) {
@@ -539,6 +552,8 @@ a :hover {
   border-radius: 30px;
   background: #e7eaef;
   opacity: 0.14;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 @media all and (max-width: 1494px) {
@@ -546,6 +561,26 @@ a :hover {
     -webkit-transform: translate(-50%, -50%) rotate(10deg);
             transform: translate(-50%, -50%) rotate(10deg);
   }
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct:hover .profile_img {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  height: 160px;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct:hover .profile_img:after {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct:hover .profile_img:before {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .name_owner {
@@ -639,12 +674,47 @@ a :hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 70px;
+  height: 60px;
   background: #e7eaef 0% 0% no-repeat padding-box;
   border-radius: 55px;
-  width: 100%;
+  width: 90%;
   -webkit-transform: translateY(50%);
           transform: translateY(50%);
+  position: relative;
+  z-index: 3;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials:after {
+  display: block;
+  width: 115%;
+  content: " ";
+  height: 140%;
+  border-radius: 70px;
+  background: #25323E;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  z-index: -2;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials:before {
+  display: block;
+  width: 100%;
+  content: " ";
+  height: 100%;
+  border-radius: 70px;
+  background: #445661;
+  position: absolute;
+  opacity: 0.5;
+  top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  left: 50%;
+  z-index: -1;
+  -webkit-box-shadow: 0px 5px 0px 2px #00000025;
+          box-shadow: 0px 5px 0px 2px #00000025;
 }
 
 @media all and (max-width: 1311px) {
@@ -671,6 +741,7 @@ a :hover {
   border-radius: 50%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  color: white;
 }
 
 @media all and (max-width: 1311px) {
@@ -688,22 +759,6 @@ a :hover {
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .facebook {
-  color: #0058b1;
-}
-
-.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .twitter {
-  color: #008cc1;
-}
-
-.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .linkedin {
-  color: #2c6596;
-}
-
-.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .whatsapp {
-  color: #00960c;
 }
 
 .flex .profile_container .struct .useful {
@@ -964,6 +1019,7 @@ a :hover {
   color: #edf2f8;
   margin-left: 50px;
   cursor: pointer;
+  border-radius: 48px;
 }
 
 @media all and (max-width: 1074px) {
@@ -1024,6 +1080,7 @@ a :hover {
   font: normal normal 300 14px/24px Poppins;
   letter-spacing: 0px;
   color: #cccccc;
+  position: relative;
 }
 
 .flex .aside .struct h2 {

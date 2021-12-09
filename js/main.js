@@ -6,3 +6,11 @@ $(document).ready(function() {
         roundDraw = roundPercent * roundCircum / 100
     $round.css('stroke-dasharray', roundDraw  + ' 999');
   });
+
+
+  $(document).ready(function () {
+      $("#nav_menu .item").bind('click',function(){
+        $("#nav_menu .item").removeClass('active');
+        $(this).addClass('active');
+      });
+  });
