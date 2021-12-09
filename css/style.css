@@ -1083,6 +1083,12 @@ a :hover {
   position: relative;
 }
 
+@media all and (max-width: 500px) {
+  .flex .aside .struct .description {
+    font-size: 12px;
+  }
+}
+
 .flex .aside .struct h2 {
   font: normal normal normal 30px/40px Yanone Kaffeesatz;
   letter-spacing: 0px;
