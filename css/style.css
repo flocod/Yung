@@ -1086,6 +1086,7 @@ a :hover {
 @media all and (max-width: 500px) {
   .flex .aside .struct .description {
     font-size: 12px;
+    line-height: normal;
   }
 }
 
