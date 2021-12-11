@@ -50,6 +50,7 @@
       href="images/graduation-cap.png"
       type="image/x-icon"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="body">
@@ -63,22 +64,22 @@
           </div>
 
           <div id="nav_menu" class="menu">
-
-           
-
-            <div class="item active">
+            <div  id="btn_home" class="item active">
               <i class="fad fa-home"></i>
             </div>
 
-            <div class="item">
+            <div id="btn_skill" class="item">
               <i class="fal fa-user-tag"></i>
             </div>
-            <div class="item">
+            <div id="btn_work" class="item">
               <i class="fal fa-briefcase"></i>
             </div>
-            <div class="item">
+            <div id="btn_school" class="item">
               <i class="fal fa-user-graduate"></i>
             </div>
+            <div id="btn_contact" class="item">
+              <i class="fal fa-envelope"></i>
+          </div>
             <!-- <div class="indicator"></div> -->
           </div>
 
@@ -93,8 +94,10 @@
       </div>
 
       <div class="container">
-        <div id="Home" class="page">
-          <div class="flex">
+        <div id="Load_container" class="page">
+
+
+          <div class="flex" data-aos="fade-down">
             <div class="profile_container">
               <div class="struct">
                 <div class="profile_owner">
@@ -155,11 +158,14 @@
                         <span class="social_item whatsapp">
                           <i class="fab fa-whatsapp"></i>
                         </span>
-
-                        
-
                       </div>
                     </span>
+
+                    <img
+                      class="box_design"
+                      src="images/svg/box_design.svg"
+                      alt=""
+                    />
                   </span>
                 </div>
 
@@ -190,16 +196,15 @@
                 <div class="page_title">
                   <div class="title_section">
                     <span class="ico"><i class="fal fa-user-tie"></i></span>
-                    <span class="text">
-                      About Me
-                    </span>
-                    <img src="images/svg/star.svg" alt="">
+                    <span class="text"> About Me </span>
+                    <img src="images/svg/star.svg" alt="" />
                   </div>
 
                   <div class="add_detail add_detail_first">29 Years</div>
 
-                  <div class="add_detail">Freelancer
-                    <img src="images/svg/desktop.svg" alt="">
+                  <div class="add_detail">
+                    Freelancer
+                    <img src="images/svg/desktop.svg" alt="" />
                   </div>
 
                   <div class="btn_download">
@@ -221,8 +226,7 @@
                   dolor sit amet, consectetur, adipisci velit, sed quia non
                   numquam eius modi tempora incidunt ut labore et dolore magnam
 
-                  <img class="apparels" src="images/svg/media.svg" alt="">
-
+                  <!-- <img class="apparels" src="images/svg/media.svg" alt=""> -->
                 </p>
 
                 <h2>What I can do</h2>
@@ -264,7 +268,6 @@
                       </div>
                     </span>
                   </div>
-
 
                   <div class="skill_box">
                     <span class="skill_box_struct">
@@ -322,7 +325,7 @@
                             <circle cx="50" stroke="#D37D33" cy="50" r="40" />
                           </svg>
 
-                          <div class="percentage" style="background: #3C4031">
+                          <div class="percentage" style="background: #3c4031">
                             <span class="percent_contain">
                               <span class="val">75</span>
                               <span class="unit">%</span>
@@ -343,13 +346,10 @@
             </div>
           </div>
 
-          <img class="fond_bottom" src="images/svg/big_fond.svg" alt="">
-         
 
         </div>
-
-       
-
+        <img class="fond_bottom" src="images/svg/big_fond.svg" alt="" />
+        <img class="bg_design" src="images/svg/bg_design.svg" alt="" />
       </div>
     </div>
     <script
@@ -357,6 +357,10 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

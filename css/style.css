@@ -185,8 +185,8 @@ a :hover {
   border-radius: 50%;
   position: relative;
   font-size: 20px;
-  color: #F7FFFF;
-  margin-bottom: 20px;
+  color: #CCCCCC;
+  margin-bottom: 0px;
   cursor: pointer;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -321,6 +321,25 @@ a :hover {
   z-index: -1;
 }
 
+.container .bg_design {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0%;
+  -webkit-transform: translateX(47%) translateY(-45%);
+          transform: translateX(47%) translateY(-45%);
+  width: 89%;
+  z-index: -1;
+}
+
+@media all and (max-width: 1337px) {
+  .container .bg_design {
+    width: 90%;
+    -webkit-transform: translateX(30%) translateY(-45%);
+            transform: translateX(30%) translateY(-45%);
+  }
+}
+
 .container .apparels {
   display: block;
   position: absolute;
@@ -419,6 +438,7 @@ a :hover {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 .flex .profile_container .struct .profile_owner .fil {
@@ -761,6 +781,15 @@ a :hover {
   transition: all 0.3s ease;
 }
 
+.flex .profile_container .struct .profile_owner .profile_owner_box .box_design {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 80%;
+  z-index: 0;
+}
+
 .flex .profile_container .struct .useful {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -816,262 +845,6 @@ a :hover {
   letter-spacing: 0px;
   color: #aaaaaa;
   opacity: 0.51;
-}
-
-.flex .aside .struct .page_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  border-top: 1px solid #70707062;
-  border-bottom: 1px solid #70707062;
-}
-
-@media all and (max-width: 474px) {
-  .flex .aside .struct .page_title {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-}
-
-.flex .aside .struct .page_title .title_section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-@media all and (max-width: 900px) {
-  .flex .aside .struct .page_title .title_section {
-    margin-right: 15px;
-  }
-}
-
-@media all and (max-width: 812px) {
-  .flex .aside .struct .page_title .title_section {
-    width: 100%;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-bottom: 20px;
-  }
-}
-
-.flex .aside .struct .page_title .title_section .ico {
-  color: #e0ff38;
-  display: inline-block;
-  font-size: 30px;
-  line-height: 0px;
-  opacity: 0.51;
-}
-
-@media all and (max-width: 900px) {
-  .flex .aside .struct .page_title .title_section .ico {
-    font-size: 20px;
-  }
-}
-
-.flex .aside .struct .page_title .title_section .text {
-  display: inline-block;
-  font: normal normal normal 40px/42px Yanone Kaffeesatz;
-  letter-spacing: 0px;
-  color: #edf2f8;
-  margin-left: 23px;
-}
-
-@media all and (max-width: 1498px) {
-  .flex .aside .struct .page_title .title_section .text {
-    font: normal normal normal 30px/40px Yanone Kaffeesatz;
-  }
-}
-
-@media all and (max-width: 900px) {
-  .flex .aside .struct .page_title .title_section .text {
-    font-size: 25px;
-    line-height: 30px;
-    margin-left: 10px;
-  }
-}
-
-.flex .aside .struct .page_title .title_section img {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  -webkit-transform: translateX(50%) translateY(-50%);
-          transform: translateX(50%) translateY(-50%);
-  width: 80px;
-}
-
-@media all and (max-width: 1498px) {
-  .flex .aside .struct .page_title .title_section img {
-    width: 60px;
-  }
-}
-
-@media all and (max-width: 900px) {
-  .flex .aside .struct .page_title .title_section img {
-    width: 40px;
-  }
-}
-
-@media all and (max-width: 812px) {
-  .flex .aside .struct .page_title .title_section img {
-    -webkit-transform: translateX(-150%) translateY(-50%);
-            transform: translateX(-150%) translateY(-50%);
-    left: 50%;
-    right: auto;
-  }
-}
-
-.flex .aside .struct .page_title .add_detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 50px;
-  border-left: 1px solid #70707062;
-  font: normal normal normal 23px/23px Yanone Kaffeesatz;
-  color: #cccccc;
-  margin-right: 30px;
-  padding-left: 30px;
-  position: relative;
-}
-
-@media all and (max-width: 474px) {
-  .flex .aside .struct .page_title .add_detail {
-    width: 20%;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin-bottom: 12px;
-  }
-}
-
-@media all and (max-width: 900px) {
-  .flex .aside .struct .page_title .add_detail {
-    margin-right: 20px;
-    padding-left: 20px;
-    height: 30px;
-    font: normal normal normal 17px/23px Yanone Kaffeesatz;
-  }
-}
-
-.flex .aside .struct .page_title .add_detail img {
-  position: absolute;
-  top: 50%;
-  right: 0%;
-  -webkit-transform: translateX(100%) translateY(-50%);
-          transform: translateX(100%) translateY(-50%);
-  width: 70px;
-}
-
-@media all and (max-width: 1498px) {
-  .flex .aside .struct .page_title .add_detail img {
-    width: 40px;
-  }
-}
-
-@media all and (max-width: 812px) {
-  .flex .aside .struct .page_title .add_detail_first {
-    border-left: none;
-    padding-left: 0px;
-  }
-}
-
-.flex .aside .struct .page_title .btn_download {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 221px;
-  height: 68px;
-  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
-          transform: matrix(1, 0, 0, 1, 0, 0);
-  background: #8da700 0% 0% no-repeat padding-box;
-  border-radius: 8px;
-  color: #edf2f8;
-  margin-left: 50px;
-  cursor: pointer;
-  border-radius: 48px;
-}
-
-@media all and (max-width: 1074px) {
-  .flex .aside .struct .page_title .btn_download {
-    margin-left: 0px !important;
-    width: 186px;
-    height: 60px;
-  }
-}
-
-.flex .aside .struct .page_title .btn_download .text {
-  font: normal normal medium 15px/23px Poppins;
-  letter-spacing: 0px;
-}
-
-@media all and (max-width: 1074px) {
-  .flex .aside .struct .page_title .btn_download .text {
-    font-size: 13px !important;
-    margin-left: 0px !important;
-  }
-}
-
-@media all and (max-width: 474px) {
-  .flex .aside .struct .page_title .btn_download .text {
-    border-bottom: 1px solid #8da700;
-    padding-bottom: 3px;
-    display: inline-block;
-  }
-}
-
-.flex .aside .struct .page_title .btn_download .ico {
-  display: inline-block;
-  font-size: 20px;
-  margin-left: 20px;
-}
-
-@media all and (max-width: 1074px) {
-  .flex .aside .struct .page_title .btn_download .ico {
-    font-size: 14px !important;
-    margin-left: 15px !important;
-  }
-}
-
-@media all and (max-width: 474px) {
-  .flex .aside .struct .page_title .btn_download {
-    background: none;
-    width: auto;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    width: 100%;
-  }
 }
 
 .flex .aside .struct .description {
@@ -1198,7 +971,273 @@ a :hover {
   margin-top: 8px;
 }
 
-.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage {
+.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_decription {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font: normal normal normal 11px/20px Poppins;
+  letter-spacing: 0px;
+  color: #CCCCCC;
+  margin-top: 14px;
+}
+
+.flex .page_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-top: 1px solid #70707062;
+  border-bottom: 1px solid #70707062;
+}
+
+@media all and (max-width: 474px) {
+  .flex .page_title {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.flex .page_title .title_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media all and (max-width: 900px) {
+  .flex .page_title .title_section {
+    margin-right: 15px;
+  }
+}
+
+@media all and (max-width: 812px) {
+  .flex .page_title .title_section {
+    width: 100%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 20px;
+  }
+}
+
+.flex .page_title .title_section .ico {
+  color: #e0ff38;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 0px;
+  opacity: 0.51;
+}
+
+@media all and (max-width: 900px) {
+  .flex .page_title .title_section .ico {
+    font-size: 20px;
+  }
+}
+
+.flex .page_title .title_section .text {
+  display: inline-block;
+  font: normal normal normal 40px/42px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #edf2f8;
+  margin-left: 23px;
+}
+
+@media all and (max-width: 1498px) {
+  .flex .page_title .title_section .text {
+    font: normal normal normal 30px/40px Yanone Kaffeesatz;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .flex .page_title .title_section .text {
+    font-size: 25px;
+    line-height: 30px;
+    margin-left: 10px;
+  }
+}
+
+.flex .page_title .title_section img {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
+  width: 80px;
+}
+
+@media all and (max-width: 1498px) {
+  .flex .page_title .title_section img {
+    width: 60px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .flex .page_title .title_section img {
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 812px) {
+  .flex .page_title .title_section img {
+    -webkit-transform: translateX(-150%) translateY(-50%);
+            transform: translateX(-150%) translateY(-50%);
+    left: 50%;
+    right: auto;
+  }
+}
+
+.flex .page_title .add_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 50px;
+  border-left: 1px solid #70707062;
+  font: normal normal normal 23px/23px Yanone Kaffeesatz;
+  color: #cccccc;
+  margin-right: 30px;
+  padding-left: 30px;
+  position: relative;
+}
+
+@media all and (max-width: 474px) {
+  .flex .page_title .add_detail {
+    width: 20%;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 12px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .flex .page_title .add_detail {
+    margin-right: 20px;
+    padding-left: 20px;
+    height: 30px;
+    font: normal normal normal 17px/23px Yanone Kaffeesatz;
+  }
+}
+
+.flex .page_title .add_detail img {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateX(100%) translateY(-50%);
+          transform: translateX(100%) translateY(-50%);
+  width: 70px;
+}
+
+@media all and (max-width: 1498px) {
+  .flex .page_title .add_detail img {
+    width: 40px;
+  }
+}
+
+@media all and (max-width: 812px) {
+  .flex .page_title .add_detail_first {
+    border-left: none;
+    padding-left: 0px;
+  }
+}
+
+.flex .page_title .btn_download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 221px;
+  height: 68px;
+  -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+          transform: matrix(1, 0, 0, 1, 0, 0);
+  background: #8da700 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  color: #edf2f8;
+  margin-left: 50px;
+  cursor: pointer;
+  border-radius: 48px;
+}
+
+@media all and (max-width: 1074px) {
+  .flex .page_title .btn_download {
+    margin-left: 0px !important;
+    width: 186px;
+    height: 60px;
+  }
+}
+
+.flex .page_title .btn_download .text {
+  font: normal normal medium 15px/23px Poppins;
+  letter-spacing: 0px;
+}
+
+@media all and (max-width: 1074px) {
+  .flex .page_title .btn_download .text {
+    font-size: 13px !important;
+    margin-left: 0px !important;
+  }
+}
+
+@media all and (max-width: 474px) {
+  .flex .page_title .btn_download .text {
+    border-bottom: 1px solid #8da700;
+    padding-bottom: 3px;
+    display: inline-block;
+  }
+}
+
+.flex .page_title .btn_download .ico {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+@media all and (max-width: 1074px) {
+  .flex .page_title .btn_download .ico {
+    font-size: 14px !important;
+    margin-left: 15px !important;
+  }
+}
+
+@media all and (max-width: 474px) {
+  .flex .page_title .btn_download {
+    background: none;
+    width: auto;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    width: 100%;
+  }
+}
+
+.skill_percentage {
   width: 70px;
   height: 70px;
   background: #133e6954 0% 0% no-repeat padding-box;
@@ -1215,7 +1254,7 @@ a :hover {
   position: relative;
 }
 
-.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .round {
+.skill_percentage .round {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   -webkit-transition: all 1s ease-in-out;
@@ -1228,13 +1267,13 @@ a :hover {
   /* SVG */
 }
 
-.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .round circle {
+.skill_percentage .round circle {
   fill: none;
   stroke-width: 8;
   stroke-linecap: round;
 }
 
-.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .percentage {
+.skill_percentage .percentage {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1257,7 +1296,7 @@ a :hover {
   border-radius: 50%;
 }
 
-.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .percentage .percent_contain {
+.skill_percentage .percentage .percent_contain {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1269,23 +1308,933 @@ a :hover {
           align-items: baseline;
 }
 
-.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .percentage .percent_contain .unit {
+.skill_percentage .percentage .percent_contain .unit {
   font-size: 10px;
   opacity: 0.8;
   margin-left: 2px;
 }
 
-.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_info .skill_percentage .percentage .percent_contain .val {
+.skill_percentage .percentage .percent_contain .val {
   font: normal normal 600 18px/30px Montserrat;
   display: inline-block;
 }
 
-.flex .aside .struct .contain_skill_box .skill_box .skill_box_struct .skill_decription {
-  display: block;
+.experience_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 25px;
   width: 100%;
-  text-align: left;
-  font: normal normal normal 11px/20px Poppins;
+}
+
+.experience_menu .experience_menu_val {
+  display: block;
+}
+
+.experience_menu .experience_menu_val .text {
+  display: block;
+  font: normal normal normal 20px/30px Yanone Kaffeesatz;
   letter-spacing: 0px;
-  color: #CCCCCC;
-  margin-top: 14px;
+  color: #cccccc;
+}
+
+.experience_menu .experience_menu_val .text .descr {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 30px;
+  height: 50px;
+  margin-left: 30px;
+  border-left: 1px solid #70707062;
+  font: normal normal normal 14px/19px Poppins;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.experience_menu .experience_menu_val .line {
+  display: block;
+  width: 50px;
+  background: #8da700;
+  height: 4px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.experience_menu .year_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.experience_menu .year_container .year_item_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #70707062;
+  padding-left: 20px;
+  height: 50px;
+}
+
+.experience_menu .year_container .year_item_box .year_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 40px;
+  border-radius: 6px;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.experience_menu .year_container .year_item_box .year_item .text {
+  font: normal normal bold 17px/20px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #aaaaaa;
+  display: inline-block;
+}
+
+.experience_menu .year_container .year_item_box .year_item .ico {
+  color: #cccccc;
+  font-size: 0px;
+  margin-right: 13px;
+  opacity: 0;
+  display: inline-block;
+}
+
+.experience_menu .year_container .year_item_box .active {
+  background: #05050521;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.experience_menu .year_container .year_item_box .active .ico {
+  opacity: 0.2;
+  font-size: 14px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.experience_menu .year_container .year_item_box .active:after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 6.5px;
+  width: 6.5px;
+  border-radius: 50%;
+  background: #8da700;
+  -webkit-transform: translateX(-4px) translateY(4px);
+          transform: translateX(-4px) translateY(4px);
+  content: " ";
+}
+
+.experience_menu .left_btn {
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: #f7ffff;
+  font-size: 16px;
+  background: #0505054d;
+  cursor: pointer;
+}
+
+.contain_experiences {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.contain_experiences .after_blue_sky {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contain_experiences .after_blue_sky:after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  -webkit-transform: rotate(0deg) translateY(0px);
+          transform: rotate(0deg) translateY(0px);
+  width: 98%;
+  height: 80px;
+  content: " ";
+  background: transparent linear-gradient(236deg, #33c7ff 0%, #14536c 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 5px 3px 6px #00000029;
+          box-shadow: 5px 3px 6px #00000029;
+  border-radius: 25px;
+  opacity: 0.5;
+  z-index: -1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contain_experiences .after_bordeau {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contain_experiences .after_bordeau:after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  -webkit-transform: rotate(0deg) translateY(0px);
+          transform: rotate(0deg) translateY(0px);
+  width: 98%;
+  height: 80px;
+  content: " ";
+  background: transparent linear-gradient(294deg, #d58608 0%, #aa0256 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 5px 3px 6px #00000029;
+          box-shadow: 5px 3px 6px #00000029;
+  border-radius: 25px;
+  opacity: 0.5;
+  z-index: -1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contain_experiences .after_green_pal {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contain_experiences .after_green_pal:after {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  -webkit-transform: rotate(0deg) translateY(0px);
+          transform: rotate(0deg) translateY(0px);
+  width: 98%;
+  height: 80px;
+  content: " ";
+  background: transparent linear-gradient(294deg, #8da700 0%, #414d02 100%) 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 5px 3px 6px #00000029;
+          box-shadow: 5px 3px 6px #00000029;
+  border-radius: 25px;
+  opacity: 0.5;
+  z-index: -1;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contain_experiences .experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+  border: 1px solid #cccccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #f7fafa;
+  border-radius: 30px;
+  -webkit-box-shadow: 6px 8px 6px #1a1a1a0a;
+          box-shadow: 6px 8px 6px #1a1a1a0a;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+  width: 32%;
+  background-image: url(../images/svg/box_design.svg);
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.contain_experiences .experience .struct {
+  display: inline-block;
+  width: 80%;
+  position: relative;
+  z-index: 1;
+}
+
+.contain_experiences .experience .struct .date {
+  text-align: left;
+  font: normal normal normal 17px/20px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #cccccc;
+}
+
+.contain_experiences .experience .struct .title {
+  font: normal normal normal 22px/30px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.contain_experiences .experience .struct .entreprise {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contain_experiences .experience .struct .entreprise .entreprise_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 35px;
+  background: #008cc1 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contain_experiences .experience .struct .entreprise .entreprise_box .ico {
+  display: inline-block;
+  color: #f7ffff;
+  font-size: 12px;
+}
+
+.contain_experiences .experience .struct .entreprise .entreprise_box .text {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid white;
+  font: normal normal normal 14px/18px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #f7ffff;
+}
+
+.contain_experiences .experience .struct .entreprise .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #f7fafa;
+  width: 40px;
+  height: 40px;
+  background: #008cc1 0% 0% no-repeat padding-box;
+  -webkit-box-shadow: 2px 2px 6px #00000029;
+          box-shadow: 2px 2px 6px #00000029;
+  border-radius: 50%;
+}
+
+.contain_experiences .experience .struct .description_experience {
+  color: #707070;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.contain_experiences .experience .box_design {
+  position: absolute;
+  width: 70%;
+  -webkit-transform: translateX(40%) translateY(-20%);
+          transform: translateX(40%) translateY(-20%);
+  top: 0px;
+  right: 0px;
+  z-index: 0;
+  display: none;
+}
+
+.contain_experiences .experience:hover:after {
+  -webkit-transform: rotate(-6deg) translateY(-18px);
+          transform: rotate(-6deg) translateY(-18px);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.blue_sky {
+  background: #008cc1;
+}
+
+.bordeau {
+  background: #aa0256 !important;
+}
+
+.green_pal {
+  background: #8da700 !important;
+}
+
+.education_item {
+  background-color: #00000050 !important;
+  background-image: url("../images/svg/box_design_white.svg") !important;
+  background-size: 45% !important;
+  background-position-y: -25px !important;
+  width: 24% !important;
+  border: none !important;
+}
+
+.education_item .title {
+  color: #E7EAEF !important;
+  font: normal normal normal 25px/30px Yanone Kaffeesatz !important;
+}
+
+.education_item .description_experience {
+  font: normal normal normal 18px/22px Yanone Kaffeesatz !important;
+  letter-spacing: 0px !important;
+  color: #CCCCCC !important;
+  opacity: 0.65 !important;
+}
+
+.education_item .line {
+  display: block;
+  width: 120px;
+  margin-bottom: 20px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.041);
+  position: relative;
+}
+
+.education_item .line:after {
+  content: " ";
+  width: 35%;
+  height: 4px;
+  border-radius: 30px;
+  background: #8DA700;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.education_item .ico_education {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transform: translate(-100%, -50%);
+          transform: translate(-100%, -50%);
+  color: white;
+  opacity: 0.07;
+  font-size: 40px;
+}
+
+.contain_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.contain_btn * {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.contain_btn .btn_load {
+  width: 167px;
+  height: 59px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.contain_btn .btn_load .struct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: transparent linear-gradient(109deg, #bde9fc38 0%, #2c659639 100%) 0% 0% no-repeat padding-box;
+  border-radius: 27px;
+  position: relative;
+  z-index: 5;
+}
+
+.contain_btn .btn_load .text {
+  display: inline-block;
+  font: normal normal medium 14px/19px Poppins;
+  letter-spacing: 0px;
+  color: #f7ffff;
+}
+
+.contain_btn .btn_load .ico {
+  width: 36px;
+  height: 36px;
+  background: #bedbff4d 0% 0% no-repeat padding-box;
+  color: #f7ffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.contain_btn .btn_load .bnt_load_second {
+  width: 36px;
+  height: 36px;
+  background: #bedbff4d 0% 0% no-repeat padding-box;
+  color: #f7ffff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+}
+
+.contain_btn .btn_load .btn_load_right i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.contain_btn .btn_load:hover {
+  width: 70px;
+}
+
+.contain_btn .btn_load:hover .ico {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-left: 0px;
+}
+
+.contain_btn .btn_load:hover .text {
+  font-size: 0px;
+  opacity: 0;
+}
+
+.contain_btn .btn_load:hover .bnt_load_second {
+  opacity: 1;
+}
+
+.contain_btn .btn_load:hover .btn_load_left {
+  -webkit-transform: translateX(-170%);
+          transform: translateX(-170%);
+}
+
+.contain_btn .btn_load:hover .btn_load_right {
+  -webkit-transform: translateX(170%);
+          transform: translateX(170%);
+}
+
+.contain_btn .btn_load:hover .btn_load_right i {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  margin-top: calc(24px + 60px);
+}
+
+.skills .struct {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  border-left: 1px solid #70707062;
+}
+
+.skills .struct .inner_strut {
+  width: 80%;
+  display: block;
+}
+
+.skills .struct .contain_skills {
+  margin-top: calc(50px + 25px + 50px);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.skills .struct .contain_skills .skills_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #0000001f 0% 0% no-repeat padding-box;
+  border-radius: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.skills .struct .contain_skills .skills_items .ico {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.skills .struct .contain_skills .skills_items .ico img {
+  width: 30px;
+}
+
+.skills .struct .contain_skills .skills_items .ico img.protopie {
+  width: 70px !important;
+}
+
+.skills .struct .contain_skills .skills_items .skill_name {
+  font: normal normal normal 21px/29px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #cccccc;
+  opacity: 0.95;
+  margin-bottom: 10px;
+}
+
+.skills .struct .contain_skills .skills_items .skill_percentage {
+  width: 60px;
+  height: 60px;
+}
+
+.skills .struct .contain_skills .skills_items .skill_percentage .percentage .percent_contain .val {
+  font: 600 14px / 20px Montserrat;
+  display: inline-block;
+}
+
+.contact_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact_info .contact_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  padding-left: 20px;
+  height: 60px;
+  border-left: 1px solid #70707062;
+}
+
+.contact_info .contact_item .contact_item_title {
+  display: block;
+  font-size: 12px;
+  color: white;
+  opacity: 0.4;
+}
+
+.contact_info .contact_item .contact_item_val {
+  display: block;
+  font-size: 17px;
+  font-weight: 500;
+  color: #cccccc;
+  margin-top: 12px;
+}
+
+.contact_info .contact_item .socials {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact_info .contact_item .socials .social_contact {
+  display: inline-block;
+  margin-right: 19px;
+  font-size: 20px;
+}
+
+.contact_form_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.contact_form_box .text_contact {
+  display: block;
+  width: 260px;
+  font-family: Yanone Kaffeesatz;
+}
+
+.contact_form_box .text_contact .text1 {
+  display: block;
+  text-align: left;
+  font-size: 25px;
+  color: #a5a5a5;
+  margin-bottom: 10px;
+}
+
+.contact_form_box .text_contact .text2 {
+  display: block;
+  text-align: center;
+  font-size: 100px;
+  line-height: 100px;
+  color: #edf2f8;
+}
+
+.contact_form_box .text_contact .text3 {
+  display: block;
+  text-align: right;
+  color: #edf2f8;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.contact_form_box .form_contact {
+  width: 40%;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-radius: 40px;
+  background: rgba(0, 0, 0, 0.1);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 50px;
+}
+
+.contact_form_box .form_contact .struct {
+  display: block;
+  width: 80%;
+}
+
+.contact_form_box .form_contact .struct .flex_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contact_form_box .form_contact .struct .flex_item .input_item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 63px;
+  width: 48%;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.contact_form_box .form_contact .struct .flex_item .input_item .ic {
+  display: inline-block;
+  font-size: 17px;
+  color: #cccccc;
+}
+
+.contact_form_box .form_contact .struct .flex_item .input_item .input_val {
+  display: inline-block;
+  height: 40%;
+  padding-left: 10px;
+  margin-left: 10px;
+  color: #cccccc;
+  width: 60%;
+  background: none;
+  border: none;
+  border-left: 2px solid #707070;
+}
+
+.contact_form_box .form_contact .struct .flex_item .input_item .select option {
+  background: #2b2b2b;
+  color: #cccccc;
+}
+
+.contact_form_box .form_contact .struct .flex_item .input_item .select option:hover {
+  background: #444444;
+}
+
+.contact_form_box .form_contact .struct .textarea {
+  display: inline-block;
+  width: 100%;
+  height: 230px;
+  padding: 30px;
+  background: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  color: #cccccc;
+  font-family: Yanone Kaffeesatz;
+  font-size: 15px;
+  border: none;
+}
+
+.contact_form_box .form_contact .struct .btn_send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 64px;
+  background: #8DA700;
+  border-radius: 30px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.contact_form_box .form_contact .struct .btn_send .text {
+  display: inline-block;
+  font-size: 14px;
+  color: #F7FFFF;
+}
+
+.contact_form_box .form_contact .struct .btn_send .ico {
+  display: inline-block;
+  font-size: 20px;
+  color: #F7FFFF;
+  margin-left: 20px;
+}
+
+.contact_form_box .form_contact .struct .btn_send:hover {
+  background: #687a03;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }

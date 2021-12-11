@@ -28,6 +28,21 @@ transform: translateX(-90%);
 width: 40%;
 z-index: -1;
 }
+
+.bg_design{
+display: block;
+position: absolute;
+top: 0px;
+right:0%;
+transform: translateX(47%) translateY(-45%);
+width: 89%;
+z-index: -1;
+@media all and (max-width:1337px){
+    width: 90%;
+    transform: translateX(30%) translateY(-45%);
+}
+}
+
 .apparels{
 display: block;
 position: absolute;

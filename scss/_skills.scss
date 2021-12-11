@@ -1,0 +1,74 @@
+.skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  margin-top: calc(24px + 60px);
+  .struct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-left: 1px solid #70707062;
+    .inner_strut {
+      width: 80%;
+      display: block;
+    }
+
+    .contain_skills {
+      margin-top: calc(50px + 25px + 50px);
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+      grid-auto-rows: minmax(100px, auto);
+
+
+
+    
+
+
+      .skills_items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #0000001f 0% 0% no-repeat padding-box;
+        border-radius: 30px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .ico {
+          display: inline-block;
+          margin-bottom: 10px;
+          img {
+            width: 30px;
+          }
+          img.protopie {
+            width: 70px !important;
+          }
+        }
+
+        .skill_name {
+          font: normal normal normal 21px/29px Yanone Kaffeesatz;
+          letter-spacing: 0px;
+          color: #cccccc;
+          opacity: 0.95;
+          margin-bottom: 10px;
+        }
+
+        .skill_percentage {
+          width: 60px;
+          height: 60px;
+          .percentage .percent_contain .val {
+            font: 600 14px / 20px Montserrat;
+            display: inline-block;
+          }
+        }
+      }
+
+
+
+
+    }
+  }
+}

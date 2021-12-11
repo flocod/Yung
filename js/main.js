@@ -8,9 +8,48 @@ $(document).ready(function() {
   });
 
 
+  function selected(element){
+    $(element).bind('click',function(){
+      $(element).removeClass('active');
+      $(this).addClass('active');
+    });
+  }
+
+  
   $(document).ready(function () {
-      $("#nav_menu .item").bind('click',function(){
-        $("#nav_menu .item").removeClass('active');
-        $(this).addClass('active');
-      });
+      selected("#nav_menu .item");
+      selected(".year_item");
   });
+
+
+
+  function laoding_princ(elt) {
+    $("#Load_container").load(elt);
+    console.log(elt);
+  }
+
+
+
+  // navigation systeme
+
+  $(document).ready(function () {
+
+    $('#btn_home').on( "click", function() {
+      laoding_princ('assets/home.html');
+    });
+    $('#btn_skill').on( "click", function() {
+      laoding_princ('assets/experience.html');
+    });
+    $('#btn_work').on( "click", function() {
+      laoding_princ('assets/work.html');
+    });
+    $('#btn_school').on( "click", function() {
+      laoding_princ('assets/education.html');
+    });
+    $('#btn_contact').on( "click", function() {
+      laoding_princ('assets/contact.html');
+    });
+
+
+  });
+  
