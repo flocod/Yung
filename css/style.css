@@ -2688,3 +2688,8 @@ a :hover {
       -ms-user-select: none;
           user-select: none;
 }
+
+.active {
+  pointer-events: none;
+  cursor: pointer;
+}
