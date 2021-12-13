@@ -25,8 +25,8 @@ function laoding_princ(elt) {
   console.log(elt);
 }
 
-function laoding_work(elt) {
-  $(".work_load_container").load(elt);
+function laoding_work(elt,cb) {
+  $(".work_load_container").load(elt,cb);
   console.log(elt);
 }
 
@@ -60,28 +60,69 @@ $(document).ready(function () {
 
 
 
+  // script qui charge le code html du carousel
+  // dans le page work.html
   $("body").on("click", "#video_gal",function () {
-    laoding_work("assets/video_work.html");
 
-    var video_container = $(".video_container");
-    video_container.trigger("refresh.owl.carousel");
-    $owl.owlCarousel({
-      loop: true,
-      margin: 10,
-      nav: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 2,
-        },
-        1000: {
-          items: 3,
-        },
-      },
-    });
+    laoding_work("assets/video_work.html",function(){
 
+      var video_container = $(".video_container");
+
+      video_container.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+
+
+      $('body').on('click','#video_container_left',function () {
+        video_container.trigger("prev.owl.carousel");
+      });
+      $('body').on('click','#video_container_right',function () {
+        video_container.trigger("next.owl.carousel");
+      });
+
+
+    }); 
+
+  });
+
+  $("body").on("click", "#link_gal",function () {
+
+    laoding_work("assets/link_work.html",function(){
+
+      var owl_task_container = $(".owl_task_container");
+
+      owl_task_container.owlCarousel({
+        items:1,
+        loop: true,
+        margin: 10,
+        nav: false,
+        center:true,
+       
+      });
+
+
+      $('body').on('click','#task_btn_left',function () {
+        owl_task_container.trigger("prev.owl.carousel");
+      });
+      $('body').on('click','#task_btn_right',function () {
+        owl_task_container.trigger("next.owl.carousel");
+      });
+
+
+    }); 
 
   });
 

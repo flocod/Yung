@@ -1795,6 +1795,10 @@ a :hover {
 .contain_btn .btn_load {
   width: 167px;
   height: 59px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1850,6 +1854,8 @@ a :hover {
           justify-content: center;
   font-size: 14px;
   margin-left: 10px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contain_btn .btn_load .bnt_load_second {
@@ -1873,41 +1879,48 @@ a :hover {
   z-index: 0;
 }
 
+.contain_btn .btn_load .bnt_load_second:active i {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .contain_btn .btn_load .btn_load_right i {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.contain_btn .btn_load:hover {
+.contain_btn:hover .btn_load {
   width: 70px;
 }
 
-.contain_btn .btn_load:hover .ico {
+.contain_btn:hover .btn_load .ico {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   margin-left: 0px;
 }
 
-.contain_btn .btn_load:hover .text {
+.contain_btn:hover .btn_load .text {
   font-size: 0px;
   opacity: 0;
 }
 
-.contain_btn .btn_load:hover .bnt_load_second {
+.contain_btn:hover .btn_load .bnt_load_second {
   opacity: 1;
 }
 
-.contain_btn .btn_load:hover .btn_load_left {
+.contain_btn:hover .btn_load .btn_load_left {
   -webkit-transform: translateX(-170%);
           transform: translateX(-170%);
 }
 
-.contain_btn .btn_load:hover .btn_load_right {
+.contain_btn:hover .btn_load .btn_load_right {
   -webkit-transform: translateX(170%);
           transform: translateX(170%);
 }
 
-.contain_btn .btn_load:hover .btn_load_right i {
+.contain_btn:hover .btn_load .btn_load_right i {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
@@ -2451,7 +2464,7 @@ a :hover {
 .work_load_container .video_container .video_item {
   display: block;
   height: 300px;
-  width: 30%;
+  width: 100%;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
   border-radius: 20px;
@@ -2461,4 +2474,217 @@ a :hover {
 .work_load_container .video_container .video_item .video_item_val {
   width: 100%;
   height: 100%;
+}
+
+.work_load_container .more_link_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.work_load_container .more_link_block .link_contain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 55%;
+  height: 578px;
+  background: rgba(0, 0, 0, 0.1) 0% 0% no-repeat padding-box;
+  border-radius: 35px;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block {
+  width: 80%;
+  height: 400px;
+  overflow-y: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  direction: ltr;
+  scrollbar-color: #d4aa70 #e4e4e4;
+  scrollbar-width: thin;
+  padding-right: 20px;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block .link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  width: 48%;
+  height: 92px;
+  background: rgba(0, 0, 0, 0.3) 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block .link_box .link_box_struct {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block .link_box .link_box_struct .number_link {
+  display: inline-block;
+  margin-right: 10px;
+  font: normal normal bold 20px/17px Montserrat;
+  letter-spacing: 0px;
+  color: #cccccc;
+  opacity: 0.5;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block .link_box .link_box_struct .link_descr {
+  display: block;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block .link_box .link_box_struct .link_descr .link_title {
+  font: normal normal normal 17px/17px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #cccccc;
+  display: block;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block .link_box .link_box_struct .link_descr .line_under {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 1px;
+  width: 30px;
+  background: #cccccc;
+  opacity: 0.3;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block .link_box .link_box_struct .link_descr .link_val {
+  display: block;
+  font: normal normal normal 12px/12px Poppins;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block::-webkit-scrollbar {
+  width: 20px;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+}
+
+.work_load_container .more_link_block .link_contain .struct_more_link_block::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: #8da700;
+}
+
+.work_load_container .more_link_block .task {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 400px;
+}
+
+.work_load_container .more_link_block .task .task_block {
+  display: block;
+  width: 80%;
+}
+
+.work_load_container .more_link_block .task .task_block .title_block {
+  display: block;
+  text-align: left;
+  font: normal normal bold 25px/19px Yanone Kaffeesatz;
+  letter-spacing: 0px;
+  color: #CCCCCC;
+  margin-bottom: 20px;
+}
+
+.work_load_container .more_link_block .task .task_block .task_container {
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.work_load_container .more_link_block .task .task_block .task_container .task_item {
+  height: 500px;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.work_load_container .more_link_block .task .task_block .task_container .task_item img {
+  display: inline-block;
+  height: 100%;
+  width: auto !important;
+}
+
+.work_load_container .more_link_block .task .task_btn {
+  width: 40px;
+  height: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: #f7ffff;
+  font-size: 16px;
+  background: #0505054d;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
