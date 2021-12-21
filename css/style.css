@@ -528,6 +528,8 @@ a :hover {
   height: 100%;
   border-radius: 30px;
   overflow: hidden;
+  position: relative;
+  z-index: 2;
 }
 
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .profile_img .image img {
@@ -772,13 +774,28 @@ a :hover {
 }
 
 .flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .social_item:hover {
-  background: #003469;
   -webkit-filter: contrast(120%);
           filter: contrast(120%);
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .facebook:hover {
+  background-color: #0058b1;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .twitter:hover {
+  background-color: #008cc1;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .linkedin:hover {
+  background-color: #2c6596;
+}
+
+.flex .profile_container .struct .profile_owner .profile_owner_box .profile_owner_box_struct .socials .whatsapp:hover {
+  background-color: #00960c;
 }
 
 .flex .profile_container .struct .profile_owner .profile_owner_box .box_design {
@@ -1173,8 +1190,8 @@ a :hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 221px;
-  height: 68px;
+  width: 200px;
+  height: 65px;
   -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
           transform: matrix(1, 0, 0, 1, 0, 0);
   background: #8da700 0% 0% no-repeat padding-box;
@@ -1194,7 +1211,7 @@ a :hover {
 }
 
 .flex .page_title .btn_download .text {
-  font: normal normal medium 15px/23px Poppins;
+  font-size: 13px;
   letter-spacing: 0px;
 }
 
@@ -1215,7 +1232,7 @@ a :hover {
 
 .flex .page_title .btn_download .ico {
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 20px;
 }
 
@@ -1483,7 +1500,7 @@ a :hover {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 
@@ -1579,7 +1596,7 @@ a :hover {
           box-shadow: 6px 8px 6px #1a1a1a0a;
   position: relative;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   width: 32%;
   background-image: url(../images/svg/box_design.svg);
   background-size: 55%;
@@ -1699,6 +1716,11 @@ a :hover {
   display: none;
 }
 
+.contain_experiences .off_experience {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
 .contain_experiences .experience:hover:after {
   -webkit-transform: rotate(-6deg) translateY(-18px);
           transform: rotate(-6deg) translateY(-18px);
@@ -1725,15 +1747,20 @@ a :hover {
   background-position-y: -25px !important;
   width: 24% !important;
   border: none !important;
+  margin-bottom: 20px !important;
+}
+
+.education_item .date {
+  font: normal normal normal 12px/20px Yanone Kaffeesatz !important;
 }
 
 .education_item .title {
   color: #E7EAEF !important;
-  font: normal normal normal 25px/30px Yanone Kaffeesatz !important;
+  font: normal normal normal 20px/20px Yanone Kaffeesatz !important;
 }
 
 .education_item .description_experience {
-  font: normal normal normal 18px/22px Yanone Kaffeesatz !important;
+  font: normal normal normal 14px/22px Yanone Kaffeesatz !important;
   letter-spacing: 0px !important;
   color: #CCCCCC !important;
   opacity: 0.65 !important;
@@ -2036,15 +2063,15 @@ a :hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 20px;
-  padding-left: 20px;
+  margin-left: 30px;
+  padding-left: 30px;
   height: 60px;
   border-left: 1px solid #70707062;
 }
 
 .contact_info .contact_item .contact_item_title {
   display: block;
-  font-size: 12px;
+  font-size: 17px;
   color: white;
   opacity: 0.4;
 }
@@ -2067,12 +2094,23 @@ a :hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contact_info .contact_item .socials .social_contact {
   display: inline-block;
   margin-right: 19px;
   font-size: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.contact_info .contact_item .socials .social_contact:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .contact_form_box {
@@ -2085,8 +2123,8 @@ a :hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .contact_form_box .text_contact {
@@ -2141,7 +2179,7 @@ a :hover {
 
 .contact_form_box .form_contact .struct {
   display: block;
-  width: 80%;
+  width: 85%;
 }
 
 .contact_form_box .form_contact .struct .flex_item {
@@ -2152,14 +2190,14 @@ a :hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .contact_form_box .form_contact .struct .flex_item .input_item {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  height: 63px;
+  height: 50px;
   width: 48%;
   border-radius: 30px;
   -webkit-box-align: center;
@@ -2201,7 +2239,7 @@ a :hover {
 .contact_form_box .form_contact .struct .textarea {
   display: inline-block;
   width: 100%;
-  height: 230px;
+  height: 100px;
   padding: 30px;
   background: none;
   background-color: rgba(0, 0, 0, 0.3);
@@ -2223,8 +2261,8 @@ a :hover {
       -ms-flex-align: center;
           align-items: center;
   width: 220px;
-  height: 64px;
-  background: #8DA700;
+  height: 60px;
+  background: #8da700;
   border-radius: 30px;
   margin-top: 20px;
   border: none;
@@ -2236,13 +2274,13 @@ a :hover {
 .contact_form_box .form_contact .struct .btn_send .text {
   display: inline-block;
   font-size: 14px;
-  color: #F7FFFF;
+  color: #f7ffff;
 }
 
 .contact_form_box .form_contact .struct .btn_send .ico {
   display: inline-block;
   font-size: 20px;
-  color: #F7FFFF;
+  color: #f7ffff;
   margin-left: 20px;
 }
 
@@ -2348,7 +2386,7 @@ a :hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .work_load_container .galery {
@@ -2388,8 +2426,8 @@ a :hover {
 
 .work_load_container .galery .contain_img img {
   display: inline-block;
-  width: 110%;
-  height: 130%;
+  width: 150%;
+  height: 160%;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transition: 1s;
@@ -2420,6 +2458,10 @@ a :hover {
   margin-left: 20px;
 }
 
+.work_load_container .galery .flex_contain_img .contain_img {
+  height: 130px;
+}
+
 .work_load_container .galery .col {
   display: block;
   height: 100%;
@@ -2427,15 +2469,11 @@ a :hover {
 
 .work_load_container .galery .img1,
 .work_load_container .galery .img2 {
-  height: 190px;
-}
-
-.work_load_container .galery .img2 {
-  width: 300px;
+  height: 140px;
 }
 
 .work_load_container .galery .img3 {
-  height: 273px;
+  height: 153px;
 }
 
 .work_load_container .galery .img4 {
@@ -2443,15 +2481,19 @@ a :hover {
 }
 
 .work_load_container .galery .img5 {
-  height: 416px;
+  height: 280px;
+}
+
+.work_load_container .galery .img6 {
+  height: 200px;
 }
 
 .work_load_container .video_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -2463,12 +2505,16 @@ a :hover {
 
 .work_load_container .video_container .video_item {
   display: block;
-  height: 300px;
+  height: 235px;
   width: 100%;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
   border-radius: 20px;
   overflow: hidden;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .work_load_container .video_container .video_item .video_item_val {
@@ -2476,12 +2522,19 @@ a :hover {
   height: 100%;
 }
 
+.work_load_container .video_container .video_item_Active {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
 .work_load_container .more_link_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -2502,14 +2555,14 @@ a :hover {
       -ms-flex-pack: center;
           justify-content: center;
   width: 55%;
-  height: 578px;
+  height: 270px;
   background: rgba(0, 0, 0, 0.1) 0% 0% no-repeat padding-box;
   border-radius: 35px;
 }
 
 .work_load_container .more_link_block .link_contain .struct_more_link_block {
-  width: 80%;
-  height: 400px;
+  width: 85%;
+  height: 210px;
   overflow-y: scroll;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2647,7 +2700,7 @@ a :hover {
 }
 
 .work_load_container .more_link_block .task .task_block .task_container .task_item {
-  height: 500px;
+  height: 250px;
   width: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2692,4 +2745,60 @@ a :hover {
 .active {
   pointer-events: none;
   cursor: pointer;
+}
+
+.view_gal_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 999;
+}
+
+.view_gal_container .viewer_gal {
+  display: block;
+  width: 40%;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.view_gal_container .viewer_gal img {
+  width: 100%;
+}
+
+.img_to_view {
+  cursor: pointer;
+}
+
+.view_gal_container_Active {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  opacity: 1;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.view_gal_container_Active .viewer_gal {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .8s;
+  transition: .8s;
 }

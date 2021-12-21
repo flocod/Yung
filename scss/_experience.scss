@@ -122,7 +122,7 @@ color: #707070;
   justify-content: space-between;
   flex-wrap: wrap;
   
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 30px;
 //   grid-template-columns: repeat(3, 1fr);
 //   grid-gap: 10px;
@@ -204,7 +204,7 @@ color: #707070;
     box-shadow: 6px 8px 6px #1a1a1a0a;
     position: relative;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 32%;
 
     background-image: url(../images/svg/box_design.svg);
@@ -299,6 +299,10 @@ color: #707070;
     }
   }
 
+  .off_experience{
+    transform: scale(0);
+  }
+
   .experience:hover {
     &:after {
       transform: rotate(-6deg) translateY(-18px);
@@ -327,13 +331,19 @@ color: #707070;
         background-position-y: -25px !important;
         width: 24% !important;
         border: none !important;
+        margin-bottom: 20px !important;
+
+        .date{
+          font: normal normal normal 12px/20px Yanone Kaffeesatz !important;
+        }
+
         .title{
           color: #E7EAEF !important;  
-          font: normal normal normal 25px/30px Yanone Kaffeesatz !important;
+          font: normal normal normal 20px/20px Yanone Kaffeesatz !important;
         }
         .description_experience
         {
-            font: normal normal normal 18px/22px Yanone Kaffeesatz !important;
+            font: normal normal normal 14px/22px Yanone Kaffeesatz !important;
             letter-spacing: 0px !important;
             color: #CCCCCC !important;
             opacity: 0.65 !important;
