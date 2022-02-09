@@ -176,13 +176,16 @@ $(document).ready(function () {
         owl_task_container.trigger("next.owl.carousel");
       });
 
-      // $('body').on('click','.task_container', function(event){
 
-      //   temp_img=$(this).find('.active .img_to_view').attr('src');
-      //   $('.view_gal_container').toggleClass('view_gal_container_Active');
-      //   $('#display_image').attr('src',temp_img);
+      // for mobo img
+      $('body').on('click','.task_container', function(event){
+
+        temp_img=$(this).find('.active .img_to_view').attr('src');
+        source='full_'+temp_img;
+        $('.view_gal_container').toggleClass('view_gal_container_Active');
+        $('#display_image').attr('src',source);
     
-      // });
+      });
 
 
 
