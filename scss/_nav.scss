@@ -89,7 +89,7 @@
                 position: absolute;
                 top: 50%;
                 right: 0px;
-                transform: translateY(-50%) translateX(100%) ;
+                transform: translateY(-50%) translateX(100%) scale(0);
                 z-index: 10 !important;
                 opacity: 0;
                 transition: 0.3s;
@@ -139,6 +139,7 @@
                 .hover_name{
                     opacity: 1;
                     transition: 0.3s;
+                    transform: translateY(-50%) translateX(100%) scale(1);
                 }
 
                }
