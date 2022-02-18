@@ -115,6 +115,7 @@ a :hover {
   background: #194056;
   height: 90%;
   position: fixed;
+  z-index: 10;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -227,6 +228,83 @@ a :hover {
     width: 44px;
     height: 44px;
   }
+}
+
+.nav .struct .menu .item .hover_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 240px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%) translateX(100%);
+          transform: translateY(-50%) translateX(100%);
+  z-index: 10 !important;
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.nav .struct .menu .item .hover_name .ddlle {
+  display: inline-block;
+  width: 15px;
+  height: 1.2px;
+  background: white;
+  position: relative;
+  -webkit-transform: translateX(-8px);
+          transform: translateX(-8px);
+}
+
+.nav .struct .menu .item .hover_name .ddlle::after {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+  border: 4px solid #194056;
+  content: " ";
+  top: 50%;
+  right: 0%;
+  -webkit-transform: translateY(-50%) translateX(100%);
+          transform: translateY(-50%) translateX(100%);
+}
+
+.nav .struct .menu .item .hover_name .ddlle_name {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 55px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 13px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.nav .struct .menu .item:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav .struct .menu .item:hover .hover_name {
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .nav .struct .menu .active {
