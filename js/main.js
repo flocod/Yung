@@ -11,6 +11,45 @@ function circleSvg() {
   });
 }
 
+
+function owl_year () {
+
+  var owl_year_container = $(".owl_years");
+
+  owl_year_container.owlCarousel({
+    items: 4,
+    loop: true,
+    margin: 10,
+    nav: false,
+    center: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      600: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      },
+    },
+  });
+
+  $("body").on("click", "#year_btn_right", function () {
+    owl_year_container.trigger("next.owl.carousel");
+  });
+  $("body").on("click", "#year_btn_left", function () {
+    owl_year_container.trigger("prev.owl.carousel");
+  });
+
+
+
+
+
+
+}
+
+
 // function select_work_date(indication){
 
 //     item=$('.experience');
@@ -49,11 +88,17 @@ function selected(element, cb) {
     $(this).addClass("active");
   });
 }
+function selected_year(element, cb) {
+  $("body").on("click", element, function () {
+    $(element).find('.year_item').removeClass("active");
+    $(this).find('.year_item').addClass("active");
+  });
+}
 
 $(document).ready(function () {
   selected("#nav_menu .item");
 
-  selected(".year_item", function () {});
+  selected_year(".year_item_box", function () {});
 
   selected(".work_menu .menu_item_contain .menu_item");
 });
@@ -80,6 +125,7 @@ $(document).ready(function () {
   $("#btn_skill").on("click", function () {
     laoding_princ("assets/experience.html", function () {
       circleSvg();
+      owl_year ();
     });
   });
 
@@ -108,7 +154,7 @@ $(document).ready(function () {
       var video_container = $(".video_container");
 
       video_container.owlCarousel({
-        loop: true,
+        loop: false,
         margin: 10,
         nav: true,
         responsive: {
@@ -213,3 +259,6 @@ $(document).ready(function () {
 
 
 });
+
+
+

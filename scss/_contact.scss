@@ -2,6 +2,20 @@
   display: flex;
   justify-content: center;
 
+  
+  @media all and (max-width:1377px){
+    width: 100%;
+    margin-top: 40px;
+    justify-content: left;
+  }
+
+
+  @media all and (max-width:1212px){
+    flex-wrap: wrap;
+  }
+
+
+
   .contact_item {
     display: inline-flex;
     flex-direction: column;
@@ -9,6 +23,17 @@
     padding-left: 30px;
     height: 60px;
     border-left: 1px solid #70707062;
+
+    @media all and (max-width:1212px){
+     margin-top: 30px;
+    }
+    @media all and (max-width:642px){
+      margin-left: 0px;
+      padding-left: 0px;
+      border-left: none;
+      width: 100%;
+    }
+
     .contact_item_title {
       display: block;
       font-size: 17px;
@@ -51,11 +76,18 @@
   align-items: center;
   padding-top: 0px;
   padding-bottom: 0px;
+  @media all and (max-width:1332px){
+    flex-direction: column;
+  }
 
   .text_contact {
     display: block;
     width: 260px;
     font-family: Yanone Kaffeesatz;
+    @media all and (max-width:1332px){
+      margin-bottom: 35px;
+      margin-top:40px;
+    }
     .text1 {
       display: block;
       text-align: left;
@@ -92,6 +124,19 @@
     justify-content: center;
     align-items: center;
     margin-left: 50px;
+    @media all and (max-width:902px){
+    
+      border-radius: 15px;
+    }
+
+    @media all and (max-width:1332px){
+      margin-left:0px;
+      width: 80%;
+    }
+    @media all and (max-width:619px){
+      width: 100%;
+      margin-bottom: 50px;
+    }
 
     .struct {
       display: block;
@@ -102,6 +147,7 @@
         justify-content: space-between;
         width: 100%;
         margin-bottom: 10px;
+        flex-wrap: wrap;
         .input_item {
           display: inline-flex;
           height: 50px;
@@ -110,6 +156,13 @@
           align-items: center;
           justify-content: center;
           background-color: rgba(0, 0, 0, 0.3);
+
+          @media all and (max-width:902px){
+            width: 100%;
+            margin-bottom: 20px;
+            height: 70px;
+            border-radius: 15px;
+          }
 
           .ic {
             display: inline-block;
@@ -128,6 +181,10 @@
             background: none;
             border: none;
             border-left: 2px solid #707070;
+            @media all and (max-width:902px){
+              width: 80%;
+             
+            }
           }
           .select {
             option {
@@ -153,6 +210,10 @@
         font-family: Yanone Kaffeesatz;
         font-size: 15px;
         border: none;
+        @media all and (max-width:902px){
+    
+          border-radius: 15px;
+        }
       }
 
       .btn_send {

@@ -4,15 +4,27 @@
   align-items: center;
   width: 30%;
   margin-top: calc(24px + 60px);
+
+  @media all and (max-width:1337px){
+    width: 100%;
+  }
+
   .struct {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     border-left: 1px solid #70707062;
+    @media all and (max-width:1337px){
+     border: none;
+     margin-bottom: 35px;
+    }
     .inner_strut {
       width: 80%;
       display: block;
+      @media all and (max-width:1337px){
+        width: 90%;
+      }
     }
 
     .contain_skills {
@@ -22,7 +34,16 @@
       grid-gap: 10px;
       grid-auto-rows: minmax(100px, auto);
 
+      @media all and (max-width:449px){
 
+        grid-template-columns: repeat(2, 1fr);
+
+      }
+      @media all and (max-width:334px){
+
+        grid-template-columns: repeat(1, 1fr);
+
+      }
 
     
 
